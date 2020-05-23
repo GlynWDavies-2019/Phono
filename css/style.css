@@ -68,7 +68,7 @@ img {
     align-items: center;
     display: flex;
     justify-content: center;
-    justify-self: flex-end;                         /* ??? */
+    justify-self: flex-end;                         
 }
 
 .navbar .nav a {
@@ -135,6 +135,30 @@ img {
 .section-b-inner p {
     font-size: 1.5rem;
     margin-top: 1rem;
+}
+
+/* Gallery Section */
+
+.section-c .gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.section-c .gallery a:first-child {
+    grid-column-end: 3;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-row-start: 1;
+}
+
+.section-c .gallery a:nth-child(2) {
+    grid-column: 3/5;
+}
+
+.section-c .gallery img, 
+.section-c .gallery a {
+    height: 100%;
+    width: 100%;
 }
 
 /* Utilities */
