@@ -10,8 +10,22 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Phono</title>
 </head>
-<body>
+<body id="home">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Phono</h1>
+            <ul class="nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Showcase -->
     <script src="./js/simple-lightbox.jquery.min.js"></script>
     <script src="./js/simple-lightbox.min.js"></script>
+    <script>
+        const $gallery = $('.gallery a').simpleLightbox();
+    </script>
 </body>
 </html>
